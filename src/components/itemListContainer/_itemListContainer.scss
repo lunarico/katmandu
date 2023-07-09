@@ -1,0 +1,8 @@
+.logo {
+        margin-bottom: 1rem;
+        width: 200px;
+        @media (min-width: 992px) {
+                margin-bottom: 2rem;
+                width: 250px;
+        }
+}

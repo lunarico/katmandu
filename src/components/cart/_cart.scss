@@ -1,0 +1,60 @@
+@import '../colors';
+@import '../fonts';
+
+.cart {
+    h2 {
+        color: $darkGrey;
+        font: $font__titulo;
+        letter-spacing: 0.375rem;
+        text-transform: uppercase;
+    }
+    .listCart {
+        justify-content: center;
+        @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .total {
+        font: $font__cart;
+        font-size: 2rem;
+        letter-spacing: 0.05rem;
+        margin: 2rem 0;
+        text-transform: uppercase;
+    }
+    .btnCart {
+        background: white;
+        border-radius: 0.5em;
+        border: 0.125rem solid $purple;
+        color: $darkGrey;
+        cursor: pointer;
+        font: $font__btn;
+        font-size: 1.5rem;
+        margin: 1.25rem;
+        padding: 0.5rem 5rem;
+        text-transform: uppercase;
+        a {
+            color: $darkGrey;
+            &:hover{
+                color: $purple;
+            }
+        }
+        &:hover{
+            background-color: $aqua;
+            color: $purple;
+            text-decoration: none;
+        }
+        &.vaciar{
+            display: block;
+            font-size: 1.125rem;
+            margin-left: 5rem;
+            padding: 0.125rem 1.5rem;
+            @media (min-width: 768px) {
+                margin-left: 0;
+            }
+            @media (min-width: 992px) {
+                margin-left: 3rem;
+            }
+        }
+    }
+}

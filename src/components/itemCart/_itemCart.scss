@@ -1,0 +1,33 @@
+@import '../colors';
+@import '../fonts';
+
+.itemCart {
+    border: 0.125rem solid $aqua;
+    color: $darkGrey;
+    margin: 1rem;
+    padding: 1rem 0;
+    @media (min-width: 768px) {
+        width: 40%;
+    }
+    @media (min-width: 992px) {
+        margin: 1rem 1.25rem;
+        width: 20%;
+    }
+    h4 {
+        font: $font__cart;
+        letter-spacing: 0.05rem;
+        margin: 0.75rem 0 0 0;
+        text-transform: uppercase;
+    }
+    h5 {
+        font: $font__cart;
+    }
+    img {
+        @media (min-width: 768px) {
+            width: 80%;
+        }
+        @media (min-width: 992px) {
+            width: 90%;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import '../colors';
+@import '../fonts';
+
+.contadorCont {
+    color: $darkGrey;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.375rem;
+    justify-content: center;
+    .contador {
+        border: 2px solid $purple;
+        border-radius: 0.5em;
+        margin: 1rem 0;
+        width: 90%;
+        @media (min-width: 768px) {
+            margin: 0.5rem 0;
+            width: 70%;
+        }
+        @media (min-width: 992px) {
+            width: 80%;
+        }
+        .resta, .suma {
+            background-color: transparent;
+            border: none;
+            color: $turquaise;
+            cursor: pointer;
+            font-size: 1.75rem;
+            padding: 0 1.5rem;
+        }
+        .resta {
+            padding-right: 4rem;
+            @media (min-width: 768px) {
+                padding-right: 3rem;
+            }
+            @media (min-width: 992px) {
+                padding-right: 2.5rem;
+            }
+        }
+        .suma {
+            padding-left: 4rem;
+            @media (min-width: 768px) {
+                padding-left: 3rem;
+            }
+            @media (min-width: 992px) {
+                padding-left: 2.5rem;
+            }
+        }
+    }
+}

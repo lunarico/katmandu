@@ -1,0 +1,8 @@
+.itemDetail {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0.5rem;
+    @media (min-width: 992px) {
+        margin: 2.5rem 0;
+    }
+}

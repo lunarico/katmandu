@@ -1,0 +1,14 @@
+@import '../colors';
+@import '../fonts';
+
+footer {
+    background-color: $aqua;
+    p {
+        color: $purple;
+        font: $font__nav;
+        letter-spacing: 0.05rem;
+        margin-bottom: 0;
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,66 @@
+@import './colors';
+@import './fonts';
+
+main {
+    margin-top: 2rem;
+    text-align: center;
+    .btnKatmandu {
+        background: white;
+        border-radius: 0.75em;
+        border: 0.125rem solid $purblue;
+        color: $darkGrey;
+        cursor: pointer;
+        font: $font__verMas;
+        margin: 0 2rem;
+        padding: 0 0.5rem;
+        text-decoration: none;
+        &:hover, &:focus{
+            background-color: $aqua;
+            color:$purblue;
+            outline: none;
+            text-decoration: none;
+        }
+        @media (min-width: 992px) {
+            margin: 0.25rem 2.25rem;
+        }
+    }
+    .btnDetail {
+        background: white;
+        border-radius: 0.5em;
+        border: 0.125rem solid $purblue;
+        color: $turquaise;
+        cursor: pointer;
+        font: $font__btn;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        @media (min-width: 768px) {
+            font-size: 1.5rem;
+            margin-top: 1.25rem;
+            padding: 0.5rem 0.75rem;
+        }
+        &:hover{
+            background-color: $aqua;
+            color: $purple;
+            text-decoration: none;
+        }
+        a {
+            color: $turquaise;
+            &:hover{
+                color: $purple;
+            }
+        }
+    }
+    .noProducts {
+        margin: 50% 0;
+        @media (min-width: 768px) {
+            margin: 5% 0;
+        }
+        @media (min-width: 768px) {
+            margin: 15% 0;
+        }
+        p {
+            font: $font__text;
+            margin-bottom: 3rem;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+@import '../colors';
+@import '../fonts';
+
+.titForm {
+  color: $darkGrey;
+  display: inline-block;
+  font: $font__titulo-form;
+  letter-spacing: 0.06rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 90%;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    width: 70%;
+  }
+  @media (min-width: 992px) {
+    font-size: 2.25rem;
+  }
+}
+.contForm{
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+  @media (min-width: 992px) {
+    margin-top: 2rem;
+  }
+  .logoForm {
+    width: 190px;
+    @media (min-width: 768px) {
+      margin-right: 2rem;
+      width: 250px;
+      height: 260px;
+    }
+  }
+  .formulario {
+    border-radius: 0.5rem;
+    border: 0.125rem solid $purblue;
+    color: $darkGrey;
+    display: block;
+    margin: 1rem;
+    padding: 1.5rem 3rem 0 3rem;
+    @media (min-width: 992px) {
+      margin: 0 0 0 2rem;
+    }
+  }
+}
+.buttonForm {
+        background: white;
+        border: 0.125rem solid $purblue;
+        border-radius: 0.5em;
+        color: $turquaise;
+        cursor: pointer;
+        font: $font__btn;
+        text-transform: uppercase;
+        padding: 0.5rem 2.5rem;
+        margin-bottom: 1rem;
+        @media (min-width: 992px) {
+          margin: 1rem;
+        }
+        &:disabled {
+          background-color: rgb(190, 189, 189);
+          border-color: rgb(122, 121, 121);
+          color: rgb(122, 121, 121);
+          cursor: initial;
+          &:hover{
+            background-color: rgb(190, 189, 189);
+            border-color: rgb(122, 121, 121);
+            color: rgb(122, 121, 121);
+            cursor: initial;
+          }
+        }
+        &:hover{
+          background-color: $aqua;
+          color: $purple;
+        }
+        a {
+          color: $turquaise;
+          &:hover{
+              color: $purple;
+              text-decoration: none;
+          }
+      }
+      &.volver {
+        margin: 16rem 0;
+        @media (min-width: 768px) {
+          margin: 8rem 0;
+        }
+        @media (min-width: 992px) {
+          margin: 14rem 0;
+        }
+      }
+}
