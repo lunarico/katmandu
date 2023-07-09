@@ -4,7 +4,6 @@ import {ItemDetail} from '../itemDetail/itemDetail'
 import {useEffect, useState, useContext} from "react/cjs/react.development"
 import {useParams} from "react-router"
 import db, { getFirestore } from '../../firebase';
-import Lottie from 'react-lottie'
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import { doc, getDoc } from 'firebase/firestore';
@@ -46,20 +45,12 @@ export const ItemDetailContainer = () => {
 
     return (
         <main className="itemDetail">
-            {loading ? (
-                <Lottie 
-                    options={defaultOptions}
-                    height={300}
-                    width={300}
-                    isStopped={animation.isStopped}
-                    isPaused={animation.isPaused}
-                />
-            ) : (
-                itemExists ? (
+           
+                {itemExists ? (
                     <ItemDetail props={item} />
                 ) : (
                     <p>Lo sentimos, este producto no existe</p>
-                )
+                
             )}
         </main>
     )

@@ -7,7 +7,6 @@ import { useEffect, useState, useContext } from 'react';
 import { useParams } from "react-router";
 import db from "../../firebase";
 import { collection, getDocs, query, where } from 'firebase/firestore';
-import Lottie from 'react-lottie';
 
 export const ItemList = () => {
     const { categoryId } = useParams();
@@ -56,16 +55,6 @@ export const ItemList = () => {
                     </div>
                 )
             ) : null}
-
-            {itemExists && items.length === 0 && (
-                <Lottie
-                    options={defaultOptions}
-                    height={300}
-                    width={300}
-                    isStopped={animation.isStopped}
-                    isPaused={animation.isPaused}
-                />
-            )}
         </div>
     );
 };
