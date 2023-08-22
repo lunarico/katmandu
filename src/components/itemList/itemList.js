@@ -16,7 +16,6 @@ export const ItemList = () => {
 
     useEffect(() => {
         const getProducts = async () => {
-            console.log(categoryId)
             try {
                 const itemCollection = collection(db, 'items');
                 
@@ -33,11 +32,9 @@ export const ItemList = () => {
                 
                 setItemExists(true);
 
-                console.log(categoryId)
             } catch (error) {
                 console.error('Error fetching items:', error);
             }
-            console.log(categoryId)
         };
 
         getProducts();
