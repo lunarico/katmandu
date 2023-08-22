@@ -1,7 +1,7 @@
 import './_itemDetailContainer.scss'
 import {AnimationContext} from "../../context/animationContext";
 import {ItemDetail} from '../itemDetail/itemDetail'
-import {useEffect, useState, useContext} from "react/cjs/react.development"
+import {useEffect, useState, useContext} from 'react';
 import {useParams} from "react-router"
 import db, { getFirestore } from '../../firebase';
 import firebase from 'firebase/compat/app';
